@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    volumes:
+      - ./django-tutorial:/django-tutorial
+    ports:
+      - '8000:8000'
+    depends_on:
+      - db
+    tty: true
+
+  db:
+    image: mysql:8.1.0
+    environment:
+      MYSQL_DATABASE: poll
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./db/mysql-data:/var/lib/mysql
+      # 以下のマウントはDockerの名前付きボリュームにマウントする
+      # 使う時は最終セクションのvolumesと一緒に使用する
+      # - db_data:/var/lib/mysql
+# volumes:
+#   db_data:
