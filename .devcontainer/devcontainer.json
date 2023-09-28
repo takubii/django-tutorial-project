@@ -1,0 +1,26 @@
+{
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.black-formatter",
+        "batisteo.vscode-django",
+        "ms-python.flake8",
+        "VisualStudioExptTeam.vscodeintellicode",
+        "VisualStudioExptTeam.intellicode-api-usage-examples",
+        "ms-python.isort",
+        "christian-kohler.path-intellisense",
+        "esbenp.prettier-vscode",
+        "ms-python.vscode-pylance",
+        "ms-python.python",
+        "MS-CEINTL.vscode-language-pack-ja"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python"
+      }
+    }
+  },
+  "dockerComposeFile": "../docker-compose.yml",
+  "name": "django-tutorial-project",
+  "service": "web",
+  "workspaceFolder": "/django-tutorial"
+}
