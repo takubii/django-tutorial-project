@@ -5,3 +5,5 @@ __pycache__
 /.vscode
 /static
 mysql-data
+migrations/
+!migrations/__init__.py
