@@ -18,7 +18,6 @@ services:
       MYSQL_DATABASE: poll
       MYSQL_USER: admin
       MYSQL_PASSWORD: admin
-      MYSQL_CHARACTER_SET: utf8
     ports:
       - '3306:3306'
     volumes:
