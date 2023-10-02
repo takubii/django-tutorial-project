@@ -8,10 +8,10 @@ RUN apt update && \
     default-mysql-client \
     && locale-gen ja_JP.UTF-8
 
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 ENV TZ=Asia/Tokyo
-ENV LANG ja_JP.UTF-8
+ENV LANG=ja_JP.UTF-8
 
 WORKDIR /django-tutorial
 
